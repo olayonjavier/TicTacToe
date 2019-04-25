@@ -1,6 +1,6 @@
 
 public class board {
-	private final int ROWS = 3, COLS = 3;
+	private final int ROWS = 5, COLS = 5;
 	private static final int X = 0, O = 1;
 	private static int[][] gameBoard;
 	
@@ -28,7 +28,13 @@ public class board {
 				else if(gameBoard[x][y] == 'O'){
 					System.out.print("O");
 				}
-				else{
+                                else if(x % 2 == 1){
+                                    System.out.print("-");
+                                }
+                                else if(y % 2 == 1){
+                                    System.out.print("|");
+                                }
+                                else{
 					System.out.print(" ");
 				}
 			}

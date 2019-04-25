@@ -13,11 +13,16 @@ public class game {
 	
 	public game(){
 		board init = new board();
-		
+		init.addToBoard(0, 0, 0);
+                init.addToBoard(0, 2, 2);
+                init.addToBoard(0, 4, 4);
 		init.toString();
+                
 	}
 	
 	public static void main(String[] args){
 		game test = new game();
+                
+                
 	}
 }
